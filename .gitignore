@@ -1,0 +1,9 @@
+# executaveis
+/busca_logs
+/gerador_logs_t2
+
+# dados gerados (ficam GRANDES)
+logs*/
+/*.log
+
+.DS_Store
