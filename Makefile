@@ -4,8 +4,8 @@ CFLAGS  = -O2 -Wall -Wextra
 
 all: busca_logs gerador_logs_t2
 
-busca_logs: src/busca_logs.c
-	$(MPICC) $(CFLAGS) -o $@ $<
+busca_logs: src/busca_logs.c src/busca.c src/busca.h
+	$(MPICC) $(CFLAGS) -o $@ src/busca_logs.c src/busca.c
 
 gerador_logs_t2: src/gerador_logs_t2.c
 	$(CC) $(CFLAGS) -o $@ $<
